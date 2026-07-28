@@ -1,0 +1,9 @@
+import pandas as pd
+import seaborn as sns
+
+# Load sample data
+df = sns.load_dataset("penguins")
+
+# Random sample of 5 rows
+sample_df = df.sample(n=5, random_state=42)
+print(sample_df)
